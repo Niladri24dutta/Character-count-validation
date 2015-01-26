@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Word count demo Page</title>
+    <script type="text/javascript" src="Scripts/jquery-1.10.1.min.js" ></script>
+    <script type="text/javascript" src="Scripts/jquery.wordCount.js" ></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $(".textarealimit").theLimiter({
+    errormsg : 'Too much characters',
+    element : '#newlimit',
+    limit : 100,
+    color : 'blue',
+    complete : function(){alert("Please write within 100 characters");}
+    });
+    });
+    </script>
+</head>
+<body>
+<div id="newlimit"></div><br/>
+<textarea class="textarealimit" rows="10" cols="50" placeholder="Write something here(max 100 char)"></textarea><br/><br/>
+<br/>
+<textarea class="textarealimit" rows="10" cols="50" placeholder="Write something here(max 100 char)"></textarea><br/><br/>
+<br/>
+<textarea class="textarealimit" rows="10" cols="50" placeholder="Write something here(max 100 char)"></textarea><br/><br/>
+
+</body>
+</html>
