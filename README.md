@@ -48,7 +48,7 @@ If `undefined` or empty, the default message <b>"You have exceeded character lim
 
 ### element `:String`
 
-The element where the error message will be displayed. <b>This is a mandatory field</b> <br/>
+The element where the error message will be displayed. <p style="color:red"><b>This is a mandatory field</b></p> <br/>
 This value can be an ID or Classname e.g "#newlimit" ,".newlimit".If `undefined` or empty,
 the plugin looks for an element with ID "#charlimit'.Hence there should be an element with that ID to display the error message.
 
