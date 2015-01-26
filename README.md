@@ -61,6 +61,8 @@ Maximum character limit.If `undefined` or empty,then default value <b>25</b> is 
 The color of the error message to be displayed when the character limit has been exceeded.<br/>
 If `undefined` or empty,then default value <b>'Red'</b> is considered. 
 
+## Events
+
 ### complete `:Function` (Optional)
 
 The callback function to be invoked when the character limit has been exceeded.
