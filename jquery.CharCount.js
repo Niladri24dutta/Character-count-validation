@@ -8,14 +8,12 @@
             element : '#charlimit',
             limit : 25,
             color : 'red',
-            //fontStyle  : 'Arial',
             complete : null
             },options);
             
             return this.each(function(){
              
-            //var oldtxt = $(this).text();
-            //$(this).text(oldtxt+" "+settings.text);
+          
             
             $(this).keyup(function(){
             
@@ -48,18 +46,8 @@
                 }
             }
           });  
-            /*if(settings.color)
-            {
-             $(this).css('color',settings.color);
-            }
             
-            if(settings.fontStyle)
-            {
-             $(this).css('font-style',settings.fontStyle);
-            }
-            */
             
-             
           });
         };  
 
