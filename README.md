@@ -29,7 +29,7 @@ jQuery plugin to limit the number of characters in a text field.It can be custom
 
 <script type="text/javascript">
     $(document).ready(function(){
-    $(".textarea").theLimiter({
+    $(".textarealimit").theLimiter({
     errormsg : 'Too much characters',
     element : '#newlimit',
     limit : 100,
