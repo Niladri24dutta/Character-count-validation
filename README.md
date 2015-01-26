@@ -74,7 +74,6 @@ The callback function to be invoked when the character limit has been exceeded.
 ---
 ## MIT LICENSE
 
-The MIT License (MIT)
 Copyright (c) 2015 Niladri Dutta <nild2141@gmail.com>
 https://github.com/Niladri24dutta/The-limiter
 
@@ -94,3 +93,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+---
+
+
+## Changelog
+
+### 0.1.0
+ * Inital commit
