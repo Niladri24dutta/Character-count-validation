@@ -44,7 +44,15 @@ jQuery plugin to limit the number of characters in a text field.It can be custom
 
 ### errormsg `:String`
 The error message to be shown when the character limit has been exceeded. <br/>
-If `undefined` or empty, the default message "You have exceeded character limit!" is shown.
+If `undefined` or empty, the default message <b>"You have exceeded character limit!"</b> is shown.
+
+### element `:String`
+
+The element where the error message will be displayed. <b>This is a mandatory field</b> <br/>
+This value can be an ID or Classname e.g "#newlimit" ,".newlimit".If `undefined` or empty,
+the plugin looks for an element with ID "#charlimit'.Hence there should be an element with that ID to display the error message.
+
+
 
 
 
