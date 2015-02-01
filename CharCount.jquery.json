@@ -1,0 +1,36 @@
+{
+  "name": "The-limiter",
+  "title": "jQuery The-limiter plugin",
+  "description": "A plugin to limit characters in textfield like twitter.",
+  "keywords": [
+    "jquery",
+    "character",
+    "limit",
+    "count",
+    "twitter",
+    "plugins"
+  ],
+  "version": "0.1.0",
+  "author": {
+    "name": "Niladri Dutta",
+    "url": "https://github.com/Niladri24dutta"
+  },
+  "maintainers": [
+    {
+      "name": "Niladri Dutta",
+      "url": "https://github.com/Niladri24dutta"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "homepage": "https://github.com/Niladri24dutta/The-limiter",
+  "docs": "https://github.com/Niladri24dutta/The-limiter#fnthelimiter",
+  "download": "https://github.com/Niladri24dutta/The-limiter/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.10.1"
+  }
+}
