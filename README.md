@@ -98,5 +98,10 @@ SOFTWARE.
 
 ## Changelog
 
+### 0.1.1
+
+*  Added CharCount.jquery.json manifest file
+
+
 ### 0.1.0
  * Inital commit
