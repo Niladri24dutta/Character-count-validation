@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>The-limiter by Niladri24dutta</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/Niladri24dutta/The-limiter">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>The-limiter</h1>
+            <h2>Limit the number of characters in a text field</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/Niladri24dutta/The-limiter/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Niladri24dutta/The-limiter/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="fnthelimiter" class="anchor" href="#fnthelimiter" aria-hidden="true"><span class="octicon octicon-link"></span></a>$.fn.theLimiter</h1>
+
+<p>jQuery plugin to limit the number of characters in a text field.It can be customized with custom error messages,font color,maximum charcter limit,DOM Element to show the error and callback function.</p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<div class="highlight highlight-html"><pre>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>js/jquery-1.10.1.min.js<span class="pl-pds">"</span></span> &gt;&lt;/<span class="pl-ent">script</span>&gt;
+
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>js/jquery.CharCount.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+</pre></div>
+
+<hr>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<div class="highlight highlight-html"><pre>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s1"><span class="pl-pds">"</span>newlimit<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;&lt;<span class="pl-ent">br</span>/&gt;
+&lt;<span class="pl-ent">textarea</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>textarealimit<span class="pl-pds">"</span></span> <span class="pl-e">rows</span>=<span class="pl-s1"><span class="pl-pds">"</span>10<span class="pl-pds">"</span></span> <span class="pl-e">cols</span>=<span class="pl-s1"><span class="pl-pds">"</span>50<span class="pl-pds">"</span></span> <span class="pl-e">placeholder</span>=<span class="pl-s1"><span class="pl-pds">"</span>Write something here(max 100 char)<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">textarea</span>&gt;&lt;<span class="pl-ent">br</span>/&gt;&lt;<span class="pl-ent">br</span>/&gt;
+&lt;<span class="pl-ent">br</span>/&gt;
+&lt;<span class="pl-ent">textarea</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>textarealimit<span class="pl-pds">"</span></span> <span class="pl-e">rows</span>=<span class="pl-s1"><span class="pl-pds">"</span>10<span class="pl-pds">"</span></span> <span class="pl-e">cols</span>=<span class="pl-s1"><span class="pl-pds">"</span>50<span class="pl-pds">"</span></span> <span class="pl-e">placeholder</span>=<span class="pl-s1"><span class="pl-pds">"</span>Write something here(max 100 char)<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">textarea</span>&gt;&lt;<span class="pl-ent">br</span>/&gt;&lt;<span class="pl-ent">br</span>/&gt;
+&lt;<span class="pl-ent">br</span>/&gt;
+&lt;<span class="pl-ent">textarea</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>textarealimit<span class="pl-pds">"</span></span> <span class="pl-e">rows</span>=<span class="pl-s1"><span class="pl-pds">"</span>10<span class="pl-pds">"</span></span> <span class="pl-e">cols</span>=<span class="pl-s1"><span class="pl-pds">"</span>50<span class="pl-pds">"</span></span> <span class="pl-e">placeholder</span>=<span class="pl-s1"><span class="pl-pds">"</span>Write something here(max 100 char)<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">textarea</span>&gt;&lt;<span class="pl-ent">br</span>/&gt;&lt;<span class="pl-ent">br</span>/&gt;
+
+<span class="pl-s2">&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;</span>
+<span class="pl-s2">    $(<span class="pl-s3">document</span>).ready(<span class="pl-st">function</span>(){</span>
+<span class="pl-s2">    $(<span class="pl-s1"><span class="pl-pds">"</span>.textarealimit<span class="pl-pds">"</span></span>).theLimiter({</span>
+<span class="pl-s2">    errormsg <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>Too much characters<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s2">    element <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>#newlimit<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s2">    limit <span class="pl-k">:</span> <span class="pl-c1">100</span>,</span>
+<span class="pl-s2">    color <span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>blue<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s2">    <span class="pl-en">complete</span> : <span class="pl-st">function</span>(){<span class="pl-s3">alert</span>(<span class="pl-s1"><span class="pl-pds">"</span>Please write within 100 characters<span class="pl-pds">"</span></span>);}</span>
+<span class="pl-s2">    });</span>
+<span class="pl-s2">    });</span>
+<span class="pl-s2">  &lt;/<span class="pl-ent">script</span>&gt;</span>
+</pre></div>
+
+<hr>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<h3>
+<a id="errormsg-string-optional" class="anchor" href="#errormsg-string-optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>errormsg <code>:String</code> (Optional)</h3>
+
+<p>The error message to be shown when the character limit has been exceeded. <br>
+If <code>undefined</code> or empty, the default message <b>"You have exceeded character limit!"</b> is shown.</p>
+
+<h3>
+<a id="element-string-mandatory" class="anchor" href="#element-string-mandatory" aria-hidden="true"><span class="octicon octicon-link"></span></a>element <code>:String</code> (Mandatory)</h3>
+
+<p>The element where the error message will be displayed.<b>This is a mandatory field</b> <br>
+This value can be an ID or Classname e.g "#newlimit" ,".newlimit".If <code>undefined</code> or empty,
+the plugin looks for an element with ID "#charlimit'.Hence there should be an element with that ID to display the error message.</p>
+
+<h3>
+<a id="limit-integer-optional" class="anchor" href="#limit-integer-optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>limit <code>:Integer</code> (Optional)</h3>
+
+<p>Maximum character limit.If <code>undefined</code> or empty,then default value <b>25</b> is considered. </p>
+
+<h3>
+<a id="color-string-optional" class="anchor" href="#color-string-optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>color <code>:String</code> (Optional)</h3>
+
+<p>The color of the error message to be displayed when the character limit has been exceeded.<br>
+If <code>undefined</code> or empty,then default value <b>'Red'</b> is considered. </p>
+
+<hr>
+
+<h2>
+<a id="events" class="anchor" href="#events" aria-hidden="true"><span class="octicon octicon-link"></span></a>Events</h2>
+
+<h3>
+<a id="complete-function-optional" class="anchor" href="#complete-function-optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>complete <code>:Function</code> (Optional)</h3>
+
+<p>The callback function to be invoked when the character limit has been exceeded.</p>
+
+<hr>
+
+<h2>
+<a id="mit-license" class="anchor" href="#mit-license" aria-hidden="true"><span class="octicon octicon-link"></span></a>MIT LICENSE</h2>
+
+<p>Copyright (c) 2015 Niladri Dutta <a href="mailto:nild2141@gmail.com">nild2141@gmail.com</a>
+<a href="https://github.com/Niladri24dutta/The-limiter">https://github.com/Niladri24dutta/The-limiter</a></p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+
+<hr>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changelog</h2>
+
+<h3>
+<a id="011" class="anchor" href="#011" aria-hidden="true"><span class="octicon octicon-link"></span></a>0.1.1</h3>
+
+<ul>
+<li> Added CharCount.jquery.json manifest file</li>
+</ul>
+
+<h3>
+<a id="010" class="anchor" href="#010" aria-hidden="true"><span class="octicon octicon-link"></span></a>0.1.0</h3>
+
+<ul>
+<li>Inital commit</li>
+</ul>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/Niladri24dutta">Niladri24dutta</a> can be found on <a href="https://github.com/Niladri24dutta/The-limiter">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
