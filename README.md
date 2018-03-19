@@ -1,3 +1,5 @@
+[![Contact me on Codementor](https://cdn.codementor.io/badges/contact_me_github.svg)](https://www.codementor.io/niladrisekhardutta?utm_source=github&utm_medium=button&utm_term=niladrisekhardutta&utm_campaign=github)
+
 # $.fn.theLimiter
 
 
@@ -71,7 +73,17 @@ If `undefined` or empty,then default value <b>'Red'</b> is considered.
 
 The callback function to be invoked when the character limit has been exceeded.
 
----
+## Changelog
+
+### 0.1.1
+
+*  Added CharCount.jquery.json manifest file
+
+
+### 0.1.0
+ * Inital commit
+ 
+ ---
 ## MIT LICENSE
 
 Copyright (c) 2015 Niladri Dutta <nild2141@gmail.com>
@@ -94,14 +106,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
-
-
-## Changelog
-
-### 0.1.1
-
-*  Added CharCount.jquery.json manifest file
-
-
-### 0.1.0
- * Inital commit
